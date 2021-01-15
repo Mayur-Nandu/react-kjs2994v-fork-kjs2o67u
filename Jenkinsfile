@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+ tools {
+    nodejs 'node10'
+  }
     stages {
         stage('Install Dependencies') {
             steps {
